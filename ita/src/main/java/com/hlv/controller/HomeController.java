@@ -38,6 +38,9 @@ import com.hlv.service.UserService;
 /**
  * Handles requests for the application home page.
  */
+
+
+
 @Controller
 public class HomeController {
 
@@ -220,6 +223,14 @@ public class HomeController {
 		return "upload";
 
 	}
+
+	
+	@RequestMapping(value = "/searchBy", method = RequestMethod.GET)
+	public String SearchBy(@ModelAttribute String username) {
+		this.userService.searchByName(username);
+		return "user";
+	}
+	
 
 	@RequestMapping(value = "/searchByName", method = RequestMethod.GET)
 	public String SearchByName(@ModelAttribute String username) {
