@@ -224,16 +224,18 @@ public class HomeController {
 
 	}
 
-	
-	@RequestMapping(value = "/searchBy", method = RequestMethod.GET)
-	public String SearchBy(@ModelAttribute String username) {
-		this.userService.searchByName(username);
-		return "user";
-	}
+
 	
 
 	@RequestMapping(value = "/searchByName", method = RequestMethod.GET)
 	public String SearchByName(@ModelAttribute String username) {
+		this.userService.searchByName(username);
+		return "user";
+	}
+	
+	
+	@RequestMapping(value = "/searchBy", method = RequestMethod.GET)
+	public String SearchBy(@ModelAttribute String username) {
 		this.userService.searchByName(username);
 		return "user";
 	}
