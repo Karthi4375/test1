@@ -65,10 +65,14 @@ package com.hlv.bean;
 	  return salary;
 	 }
 	 
+	/*
+	 * public Integer getEmpAge() { return empAge; }
+	 */
+
 	 public Integer getEmpAge() {
 		  return empAge;
 		 }
-
+	 
 	 public void setSalary(Long salary) {
 	  this.salary = salary;
 	 }
