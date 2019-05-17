@@ -65,9 +65,7 @@ package com.hlv.bean;
 	  return salary;
 	 }
 	 
-	/*
-	 * public Integer getEmpAge() { return empAge; }
-	 */
+	
 
 	 public Integer getEmpAge() {
 		  return empAge;
