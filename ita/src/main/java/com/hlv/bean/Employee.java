@@ -84,4 +84,3 @@ package com.hlv.bean;
 	 }
 	}
 
-

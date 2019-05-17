@@ -157,13 +157,7 @@ public class AbstractBean<E> extends MessageBean {
 		}
 	}
 
-	/*public void injectBindingResult(BindingResult bindingResult) {
-		if (messages == null)
-			messages = new ArrayList<Message>();
-		List<FieldError> fieldErrors = bindingResult.getFieldErrors();
-		for (FieldError fieldError : fieldErrors) {
-			messages.add(new Message(Message.ERROR, fieldError.getField(), fieldError.getDefaultMessage()));
-		}*/
+
 	public void injectBindingResult(BindingResult bindingResult) {
 		if (messages == null)
 			messages = new ArrayList<Message>();

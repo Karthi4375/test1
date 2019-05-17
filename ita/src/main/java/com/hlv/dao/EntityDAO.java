@@ -11,3 +11,4 @@ public interface EntityDAO<T> {
     public List<T> Find();    
     public T GetById(long id);
 }
+//its karthik...
